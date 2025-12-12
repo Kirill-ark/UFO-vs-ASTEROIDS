@@ -71,4 +71,3 @@ class Planet(pygame.sprite.Sprite):
 
         if self.rect.x < -100:
             self.kill()
-
