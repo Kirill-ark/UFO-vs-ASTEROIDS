@@ -4,6 +4,16 @@ A space survival game built with Pygame. Pilot a UFO through an endless asteroid
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/gameplay.png" width="32%" />
+  <img src="screenshots/pause%20menu.png" width="32%" />
+  <img src="screenshots/skins.png" width="32%" />
+</p>
+
+---
+
 ## Gameplay
 
 - Asteroids and planets spawn on the right side of the screen and move left
