@@ -14,13 +14,23 @@ A space survival game built with Pygame. Pilot a UFO through an endless asteroid
 
 ---
 
+## Overview
+
+UFO vs Asteroids is an endless survival game with a simple loop: dodge asteroids, click planets to score, and beat your high score. The game runs infinitely and ends only when all 3 HP are lost.
+
+Everything is built from scratch in Pygame — sprite management, collision detection, animated HUD, audio, and a persistent high score system that saves to disk across sessions.
+
+---
+
 ## Gameplay
 
 - Asteroids and planets spawn on the right side of the screen and move left
 - Collect planets by clicking on them to earn points
 - Avoid asteroids — each hit costs 1 HP
-- The game is infinite and ends when all 3 HP are lost
-- High score is saved to disk and persists across sessions
+- The game ends when all 3 HP are lost
+- High score persists across sessions
+
+---
 
 ## Controls
 
