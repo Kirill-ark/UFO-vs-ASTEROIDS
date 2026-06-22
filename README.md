@@ -1,51 +1,73 @@
-# Pygame Project by Kirill Konstantinovskii (100005773)
-# The game concept
-1. Player role:
--	You are an alien controlling a UFO.
-2.	Controls:
--	W – move up
--	S – move down
--	A – move left
--	D – move right
--	P – pause menu (or pause button on the screen)
--	Left Mouse Button click – collect planets
-3.	Goal of the Game
--	Avoid asteroids to stay alive.
--	Collect planets to earn points.
-4.	Object Spawning
--	Asteroids spawn randomly on the right side of the screen and move left.
--	Planets also spawn randomly on the right side and move left.
-5.	Health System
--	The player has 3 HP.
--	Getting hit by an asteroid = lose 1 HP.
--	When HP reaches zero → Game Over.
-6.	Game mode
--	The game is infinite — it continues as long as you survive.
-7.	High Score System
--	The game keeps track of the best score.
--	The high score is saved across all new game runs.
+# UFO vs Asteroids
 
-# How to run the game
-1.	Make sure you have Python 3.x installed on your computer
-2.	Install Pygame library via console:
--	pip install pygame
-3.	Download the project with all files and assets
-4.	Open the project folder via terminal (or VS code / PyCharm etc.)
-5.	Run the main game file:
--	python main.py
-6.	In opened game window use W, S, A, D to move UFO and survive!
+A space survival game built with Pygame. Pilot a UFO through an endless asteroid field, collect planets to score points, and survive as long as possible.
 
-# The additional features and classes
-1.	Features
--	High score system
--	Random speed position of asteroids and planets appearing
--	3 HP system (loosing HP when colliding with asteroids)
--	Animated images of asteroids, planets and effects
--	Skins variety 
-2.	Classes
--	UFO
--	Asteroid
--	Planet
--	Indicators (HPs, Planets, Score)
--	Background
+---
 
+## Gameplay
+
+- Asteroids and planets spawn on the right side of the screen and move left
+- Collect planets by clicking on them to earn points
+- Avoid asteroids — each hit costs 1 HP
+- The game is infinite and ends when all 3 HP are lost
+- High score is saved to disk and persists across sessions
+
+## Controls
+
+| Key / Input | Action |
+|---|---|
+| W A S D | Move UFO |
+| Left Mouse Button | Collect planet |
+| P | Pause menu |
+
+---
+
+## Features
+
+- 3 HP health system with animated heart indicator
+- Persistent high score saved to a local file
+- Random spawn positions and speeds for asteroids and planets
+- Animated sprites for asteroids, planets, and effects
+- 3 UFO skins to choose from
+- Background music and sound effects
+
+---
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Language | Python 3 |
+| Game Engine | Pygame |
+
+---
+
+## Project Structure
+
+```
+UFO-vs-ASTEROIDS/
+├── assets/          # sprites, animations, sounds
+├── main.py          # game loop and initialization
+├── hero.py          # UFO player class
+├── asteroid.py      # asteroid spawning and movement
+├── planet.py        # collectible planet logic
+├── indicators.py    # HUD — HP, score, high score
+├── background.py    # background rendering
+├── drawwindow.py    # display management
+├── events.py        # event and input handling
+├── sounds.py        # audio management
+└── score            # persistent high score file
+```
+
+---
+
+## Getting Started
+
+**Requirements:** Python 3, Pygame
+
+```bash
+git clone https://github.com/Kirill-ark/UFO-vs-ASTEROIDS.git
+cd UFO-vs-ASTEROIDS
+pip install pygame
+python main.py
+```
